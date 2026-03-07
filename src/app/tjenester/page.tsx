@@ -61,13 +61,14 @@ export default function TjenesterPage() {
         pillColor="blue"
         title="CAM & Maskinstyring"
         imageSrc="/images/tjenester/CAM & Maskinstyring.jpg"
-        description="Fra CAD-modell til ferdig NC-kode. Vi hjelper deg med CAM-programmering, maskinoppsett og effektiv produksjonsplanlegging – enten det er fresing, dreiing eller multiaxis-maskiner."
+        description="Fra CAD-modell til ferdig NC-kode. Vi hjelper deg med CAM-programmering, postprosessorer,  maskinoppsett og effektiv produksjonsplanlegging – enten det er fresing, dreiing eller multiaxis-maskiner."
         bullets={[
           "CAM-programmering (2.5D til 5-akse)",
           "Verktøystrategi og optimalisering",
           "Maskinoppsett og konfigurasjon",
           "Simulering og verifisering",
           "Prosessforbedring og tidsreduksjon",
+          "Utvikling av spesifisert postprosessor",
         ]}
         reverse
       />

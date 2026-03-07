@@ -31,7 +31,7 @@ const services = [
   {
     title: "CAM & Maskinstyring",
     description:
-      "Programmering og optimalisering av CNC-maskiner. CAM-oppsett, verktøystrategier og maskinoptimalisering for effektiv produksjon.",
+      "Programmering og optimalisering av CNC-maskiner. Postprosessor / CAM-oppsett, verktøystrategier og maskinoptimalisering for effektiv produksjon.",
     href: "/tjenester#cam",
     accent: "from-sky-400/30 to-sky-300/10",
     shadow: "shadow-[0_18px_45px_rgba(56,189,248,0.20)]",
