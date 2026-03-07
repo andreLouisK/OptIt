@@ -23,6 +23,8 @@ const points = [
   },
 ] as const;
 
+import Image from "next/image";
+
 export function WhyOptItSection() {
   // Felles props med 'as const' løser TypeScript-feilen på strokeLinecap/strokeLinejoin
   const iconProps = {
@@ -99,32 +101,56 @@ export function WhyOptItSection() {
           </div>
         </div>
 
-        {/* Høyre kolonne: Statistikk (beholdt fra forrige steg) */}
-        <div className="flex flex-col justify-center rounded-3xl bg-slate-900 p-8 text-slate-50">
-          <div className="space-y-6">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-300">
-              Erfaring i tall
-            </p>
-            <div className="grid grid-cols-2 gap-8">
-              <div>
-                <p className="text-3xl font-bold">15+</p>
-                <p className="text-[10px] uppercase tracking-wider text-slate-400">Års erfaring</p>
-              </div>
-              <div>
-                <p className="text-3xl font-bold">10+</p>
-                <p className="text-[10px] uppercase tracking-wider text-slate-400">Systemer</p>
-              </div>
-              <div>
-                <p className="text-3xl font-bold">CAD/PLM</p>
-                <p className="text-[10px] uppercase tracking-wider text-slate-400">Eksperter</p>
-              </div>
-              <div>
-                <p className="text-3xl font-bold">100+</p>
-                <p className="text-[10px] uppercase tracking-wider text-slate-400">Prosjekter</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* Høyre kolonne: Statistikk */}
+<div className="relative flex min-h-[400px] flex-col overflow-hidden rounded-[2rem] border border-white/5 shadow-xl group">
+  
+  {/* Bakgrunnsbilde */}
+  <div className="absolute inset-0 z-0">
+    <Image
+      src="/images/hjem/hjem-statistikk.png" // Sørg for at filen ligger i public/images/hjem/
+      alt="OptIT Erfaring i tall"
+      fill
+      priority // Legg til denne siden bildet er høyt oppe på siden
+      className="object-cover transition-transform duration-700 group-hover:scale-110"
+      sizes="(max-width: 768px) 100vw, 50vw"
+    />
+    {/* Gradient overlay - justert for bedre kontrast */}
+    <div className="absolute inset-0 bg-slate-950/50 transition-colors duration-500 group-hover:bg-slate-950/40" />
+  </div>
+
+  {/* Innhold */}
+  <div className="relative z-10 flex h-full flex-col justify-end p-8 text-center md:p-12">
+    <div className="mb-10">
+      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-400 drop-shadow-sm">
+        Erfaring i tall
+      </p>
+      <div className="mx-auto mt-2 h-1 w-12 rounded-full bg-sky-500/80" />
+    </div>
+
+    <div className="grid grid-cols-3 gap-2 border-t border-white/10 pt-10 md:gap-4">
+      <div className="space-y-1">
+        <p className="text-2xl font-bold text-white md:text-4xl">15+</p>
+        <p className="text-[10px] font-medium uppercase tracking-widest text-slate-300">
+          Års erfaring
+        </p>
+      </div>
+      
+      <div className="space-y-1 border-x border-white/10">
+        <p className="text-2xl font-bold text-white md:text-4xl">10+</p>
+        <p className="text-[10px] font-medium uppercase tracking-widest text-slate-300">
+          Systemer
+        </p>
+      </div>
+      
+      <div className="space-y-1">
+        <p className="text-2xl font-bold text-white md:text-4xl">100+</p>
+        <p className="text-[10px] font-medium uppercase tracking-widest text-slate-300">
+          Prosjekter
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
       </div>
     </section>
   );

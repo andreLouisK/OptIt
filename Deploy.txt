@@ -5,5 +5,5 @@ git commit -m "beskriv endringen"
 git push
 
 git add .
-git commit -m "Nytt forsøk på å få kontaktskjema til å funke via vercel"
+git commit -m "endret bilde for statistikk på hjem side"
 git push
