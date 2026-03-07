@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type ServiceBlockProps = {
   id?: string;
@@ -78,9 +79,11 @@ export function ServiceBlock({
               </li>
             ))}
           </ul>
-          <button className="mt-8 inline-flex items-center rounded-full bg-emerald-600 px-6 py-2.5 text-sm font-semibold text-white shadow-md transition hover:bg-emerald-500">
-            {ctaLabel}
-          </button>
+          <Link href="/kontakt">
+            <button className="mt-8 inline-flex items-center rounded-full bg-emerald-600 px-6 py-2.5 text-sm font-semibold text-white shadow-md transition hover:bg-emerald-500">
+              {ctaLabel}
+            </button>
+          </Link>
         </div>
 
         {/* Bilde-seksjonen */}
