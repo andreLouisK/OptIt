@@ -23,7 +23,7 @@ export function OurStory() {
                 tastes inn på nytt i ledd etter ledd. Vi startet OptIT for å eliminere denne friksjonen.
               </p>
               <p>
-                Med over ti års erfaring innen systemutvikling, 3D-konstruksjon og maskinstyring, 
+                Med over femten års erfaring innen systemutvikling, 3D-konstruksjon og maskinstyring, 
                 har vi spesialisert oss på å tette disse gapene. Ved å bygge intelligente broer mellom 
                 CNC, CAD, CAM og PLM, sørger vi for at dine systemer snakker sammen uten unødvendige mellomstopp.
               </p>
