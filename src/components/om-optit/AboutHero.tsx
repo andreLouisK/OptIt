@@ -14,7 +14,8 @@ export function AboutHero() {
               <span className="text-sky-300">industriell innovasjon</span>
             </h1>
             <p className="max-w-2xl text-sm text-slate-200 md:text-base">
-              Vi er dedikerte eksperter som forener dyp teknisk forståelse med lidenskap for norsk industri. Vårt mål er å digitalisere din produksjon og optimalisere din suksess.
+            Vi kombinerer dyp teknisk innsikt med lidenskap for norsk industri. 
+            Vårt mål er å fjerne friksjon gjennom digitalisering og automatisert produktflyt – skap mer med mindre innsats.
             </p>
           </div>
         </div>
