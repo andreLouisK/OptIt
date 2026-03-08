@@ -2,12 +2,14 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation"; // <--- Importer usePathname
 import { cn } from "@/lib/utils";
-import { Menu, X, ArrowRight } from "lucide-react";
+import { Menu, X } from "lucide-react"; // <--- ArrowRight er fjernet
 
 const navItems = [
   { href: "/", label: "Hjem" },
   { href: "/tjenester", label: "Tjenester" },
+  { href: "/om-optit", label: "Om OptIT" },
   { href: "/kontakt", label: "Kontakt" },
 ] as const;
 
@@ -18,6 +20,7 @@ interface NavItem {
 
 export function SiteHeader() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname(); // <--- Henter nåværende path
 
   // Hindrer scrolling når menyen er åpen
   useEffect(() => {
@@ -27,6 +30,12 @@ export function SiteHeader() {
       document.body.style.overflow = "unset";
     }
   }, [isOpen]);
+
+  // Hjelpefunksjon for å sjekke om en rute er aktiv
+  const isActive = (href: string) => {
+    if (href === "/" && pathname !== "/") return false; // Hjem er kun aktiv på nøyaktig '/'
+    return pathname.startsWith(href); // Andre ruter er aktive hvis pathname starter med href
+  };
 
   return (
     <>
@@ -40,12 +49,18 @@ export function SiteHeader() {
           </Link>
 
           {/* DESKTOP NAV */}
-          <nav className="hidden items-center gap-8 text-sm font-medium text-slate-300 md:flex">
+          <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="transition-colors hover:text-sky-400"
+                className={cn(
+                  "py-2 transition-colors",
+                  // Dynamisk styling basert på aktiv rute (kun tekstfarge)
+                  isActive(item.href)
+                    ? "text-sky-400 font-semibold" // Aktiv style
+                    : "text-slate-300 hover:text-sky-400" // Inaktiv style + hover
+                )}
               >
                 {item.label}
               </Link>
@@ -87,13 +102,17 @@ export function SiteHeader() {
                 href={item.href}
                 onClick={() => setIsOpen(false)}
                 className={cn(
-                  "group flex items-center justify-between border-b border-white/5 pb-4 text-3xl font-semibold text-white transition-all",
+                  "group flex items-center border-b border-white/5 pb-4 text-3xl font-semibold transition-all",
+                  // Dynamisk styling basert på aktiv rute (kun tekstfarge)
+                  isActive(item.href)
+                    ? "text-sky-400 translate-x-1" // Aktiv style (farge + liten flytting)
+                    : "text-white hover:text-sky-400", // Inaktiv style + hover
                   isOpen ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
                 )}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
                 {item.label}
-                <ArrowRight className="text-sky-400 opacity-0 transition-all group-hover:translate-x-2 group-hover:opacity-100" />
+                {/* ArrowRight er fjernet */}
               </Link>
             ))}
           </nav>

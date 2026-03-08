@@ -5,5 +5,5 @@ git commit -m "beskriv endringen"
 git push
 
 git add .
-git commit -m "endret bilde for statistikk på hjem side"
+git commit -m "Første utkast av Om Optit siden laget"
 git push
