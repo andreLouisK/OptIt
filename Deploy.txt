@@ -5,5 +5,5 @@ git commit -m "beskriv endringen"
 git push
 
 git add .
-git commit -m "Liten tekst endring på vår historie"
+git commit -m "Om optit side layout ferdig"
 git push

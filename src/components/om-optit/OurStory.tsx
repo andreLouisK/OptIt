@@ -25,7 +25,7 @@ export function OurStory() {
               <p>
                 Med over femten års erfaring innen systemutvikling, 3D-konstruksjon og maskinstyring, 
                 har vi spesialisert oss på å tette disse gapene. Ved å bygge intelligente broer mellom 
-                CNC, CAD, CAM og PLM, sørger vi for at dine systemer snakker sammen uten unødvendige mellomstopp.
+                ERP/CRM, PLM, CAD, CAM og CNC/produksjon sørger vi for at dine systemer snakker sammen uten unødvendige mellomstopp.
               </p>
               
               <div className="pt-4">
@@ -49,8 +49,8 @@ export function OurStory() {
               <div className="space-y-8 relative">
                 {[
                   { label: "Tilbud & Salg", desc: "Datagrunnlaget legges én gang" },
-                  { label: "Konstruksjon", desc: "Automatiske tegninger basert på data" },
-                  { label: "Produksjon", desc: "Sømløs overføring til maskin" }
+                  { label: "Konstruksjon", desc: "Automatisk produksjons grunnlag" },
+                  { label: "Produksjon", desc: "Sømløs overføring til produksjon" }
                 ].map((step, i, arr) => (
                   <div key={step.label} className="relative">
                     <div className="flex items-start gap-4">

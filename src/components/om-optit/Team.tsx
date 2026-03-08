@@ -1,41 +1,126 @@
 import React from "react";
-
-const teamMembers = [
-  { name: "Name Name", title: "Spesialist CAD/PLM", expertise: "Dedikert til å finne de beste løsningene for dine prosjekter." },
-  { name: "Maskiningeniør", title: "Maskiningeniør", expertise: "Dedikert til å finne de beste løsningene for dine prosjekter." },
-] as const;
+import Image from "next/image";
+import { Linkedin, Mail, Phone } from "lucide-react";
 
 export function Team() {
   return (
-    <section className="bg-slate-950 py-16">
-      <div className="mx-auto flex max-w-6xl flex-col items-center gap-12 px-4 md:px-8">
-        <div>
-          <p className="text-center text-xs font-semibold uppercase tracking-[0.2em] text-sky-400">
-            TEAMET
-          </p>
-          <h2 className="mt-3 text-center text-3xl font-semibold tracking-tight text-white md:text-4xl">
-            Teamet bak OptIT
-          </h2>
-        </div>
-
-        {/* Teammedlemmer i kortformat */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {teamMembers.map((member, index) => (
-            <div key={index} className="flex flex-col gap-4 rounded-2xl border border-white/10 bg-slate-900 p-8 text-center text-slate-50 min-h-[300px] shadow-lg">
-              <div className="space-y-3">
-                <p className="text-2xl font-bold text-white">{member.name}</p>
-                <p className="text-xs font-medium uppercase tracking-wider text-slate-400">{member.title}</p>
+    <section className="bg-slate-950 py-20">
+      <div className="mx-auto max-w-6xl px-4 md:px-8">
+        <div className="grid gap-12 lg:grid-cols-[300px_1fr] items-center">
+          
+          {/* Venstre: Profilbilde/Kort */}
+          <div className="relative group w-full max-w-md lg:max-w-full mx-auto lg:mx-0">
+            <div className="absolute -inset-1 rounded-[2rem] bg-gradient-to-tr from-sky-500 to-emerald-500 opacity-20 blur transition duration-500 group-hover:opacity-40" />
+            <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-slate-900 w-full shadow-2xl">
+              
+              {/* Firkantet bilde */}
+              <div className="aspect-square relative bg-slate-800 w-full">
+                <Image
+                  src="/images/team/andre.png"
+                  alt="André Louis Kristensen"
+                  fill
+                  className="object-cover"
+                />
+                {/* Fallback hvis bilde mangler */}
+                <div className="absolute inset-0 flex items-center justify-center text-slate-500 italic bg-slate-800 z-[-1]">
+                  [ Profilbilde ]
+                </div>
               </div>
-              <p className="mt-4 text-sm text-slate-300 leading-relaxed">
-                {member.expertise}
+
+              {/* Kompakt tekstområde */}
+              <div className="p-5">
+                <h3 className="text-lg font-bold text-white leading-tight">
+                  André Louis Kristensen
+                </h3>
+                <p className="text-xs text-sky-400 font-medium mt-1 mb-3">
+                  Daglig leder & Spesialist
+                </p>
+                
+                <div className="h-px bg-white/5 w-full mb-3" />
+
+                <div className="space-y-2">
+                  {/* LinkedIn */}
+                  <a 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    href="https://linkedin.com/in/ditt-brukernavn" 
+                    className="flex items-center gap-3 text-slate-400 transition hover:text-sky-400 group/link"
+                  >
+                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/5 transition group-hover/link:bg-sky-500/10">
+                      <Linkedin size={14} />
+                    </div>
+                    <span className="text-xs font-medium">LinkedIn Profil</span>
+                  </a>
+
+                  {/* E-post */}
+                  <a 
+                    href="mailto:post@optit.no" 
+                    className="flex items-center gap-3 text-slate-400 transition hover:text-sky-400 group/link"
+                  >
+                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/5 transition group-hover/link:bg-sky-500/10">
+                      <Mail size={14} />
+                    </div>
+                    <span className="text-xs font-medium">post@optit.no</span>
+                  </a>
+
+                  {/* Telefon */}
+                  <a 
+                    href="tel:+47XXXXXXXX" 
+                    className="flex items-center gap-3 text-slate-400 transition hover:text-sky-400 group/link"
+                  >
+                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/5 transition group-hover/link:bg-sky-500/10">
+                      <Phone size={14} />
+                    </div>
+                    <span className="text-xs font-medium">+47 XX XX XX XX</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Høyre: Tekst og Ekspertise */}
+          <div className="space-y-8">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-400">
+                Gründeren bak OptIT
+              </p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-4xl">
+                Din partner for teknisk utvikling
+              </h2>
+            </div>
+
+            <div className="space-y-4 text-slate-300 leading-relaxed text-sm md:text-base">
+              <p>
+                Med over 10 års erfaring fra hele verdikjeden i industrien – fra maskinstyring 
+                og 3D-konstruksjon til kompleks API-utvikling – brenner jeg for å skape 
+                løsninger som faktisk fungerer i en travel produksjonshverdag.
+              </p>
+              <p>
+                Som din hovedkontakt i OptIT sørger jeg for at vi alltid ser helheten. 
+                Enten det gjelder å automatisere en tegnefase eller integrere tunge 
+                PLM-systemer, er målet mitt å fjerne de tekniske hindringene som holder 
+                din bedrift tilbake.
+              </p>
+              <p className="text-sm italic text-slate-400 border-l border-white/10 pl-4">
+                For større prosjekter samarbeider vi med et nettverk av spesialister og 
+                partnere som deler vår visjon om en sømløs produktflyt. Dette gir oss 
+                kapasiteten til å levere robust uansett kompleksitet.
               </p>
             </div>
-          ))}
-        </div>
-        
-        <div className="text-center max-w-2xl mt-8">
-            <h3 className="text-2xl font-semibold tracking-tight text-white md:text-3xl">Et team av lidenskapelige eksperter</h3>
-            <p className="mt-4 text-sm text-slate-300 leading-relaxed md:text-base">Dedikert til å finne de beste løsningene for dine prosjekter.</p>
+
+            {/* Små tags for spisskompetanse */}
+            <div className="flex flex-wrap gap-2 pt-4">
+              {["CAD/CAM", "API-utvikling", "PLM", "Systemutvikling", "Automatisering"].map((tag) => (
+                <span 
+                  key={tag} 
+                  className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[10px] font-bold uppercase tracking-wider text-slate-400 transition hover:border-sky-500/50 hover:text-sky-300"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
