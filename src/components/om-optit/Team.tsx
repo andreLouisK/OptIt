@@ -43,7 +43,7 @@ export function Team() {
                   <a 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    href="https://linkedin.com/in/ditt-brukernavn" 
+                    href="https://linkedin.com/in/andré-kristensen-5556aa338" 
                     className="flex items-center gap-3 text-slate-400 transition hover:text-sky-400 group/link"
                   >
                     <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/5 transition group-hover/link:bg-sky-500/10">
@@ -54,24 +54,26 @@ export function Team() {
 
                   {/* E-post */}
                   <a 
-                    href="mailto:post@optit.no" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    href="mailto:andre@optit.no" 
                     className="flex items-center gap-3 text-slate-400 transition hover:text-sky-400 group/link"
                   >
                     <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/5 transition group-hover/link:bg-sky-500/10">
                       <Mail size={14} />
                     </div>
-                    <span className="text-xs font-medium">post@optit.no</span>
+                    <span className="text-xs font-medium">andre@optit.no</span>
                   </a>
 
                   {/* Telefon */}
                   <a 
-                    href="tel:+47XXXXXXXX" 
+                    href="tel:+4747385064" 
                     className="flex items-center gap-3 text-slate-400 transition hover:text-sky-400 group/link"
                   >
                     <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/5 transition group-hover/link:bg-sky-500/10">
                       <Phone size={14} />
                     </div>
-                    <span className="text-xs font-medium">+47 XX XX XX XX</span>
+                    <span className="text-xs font-medium">+47 473 85 064</span>
                   </a>
                 </div>
               </div>
