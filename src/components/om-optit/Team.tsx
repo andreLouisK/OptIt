@@ -91,9 +91,9 @@ export function Team() {
 
             <div className="space-y-4 text-slate-300 leading-relaxed text-sm md:text-base">
               <p>
-                Med over 10 års erfaring fra hele verdikjeden i industrien – fra maskinstyring 
+                Med en bred erfaring fra hele verdikjeden i industrien – fra maskinstyring 
                 og 3D-konstruksjon til kompleks API-utvikling – brenner jeg for å skape 
-                løsninger som faktisk fungerer i en travel produksjonshverdag.
+                løsninger som faktisk fungerer i en travel arbeidshverdag.
               </p>
               <p>
                 Som din hovedkontakt i OptIT sørger jeg for at vi alltid ser helheten. 

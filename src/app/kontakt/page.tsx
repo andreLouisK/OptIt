@@ -67,7 +67,7 @@ export default function KontaktPage() {
                 La oss ta en <span className="text-sky-400">prat</span>
               </h1>
               <p className="mt-4 text-lg text-slate-400">
-                Trenger du hjelp med CAD, PLM eller digitalisering av produksjonen? 
+                Trenger du hjelp med CAD, PLM eller digitalisering av din bedrift? 
                 Fyll ut skjemaet, så hører du fra oss innen kort tid.
               </p>
             </div>
