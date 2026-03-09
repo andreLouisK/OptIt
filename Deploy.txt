@@ -5,5 +5,5 @@ git commit -m "beskriv endringen"
 git push
 
 git add .
-git commit -m "Lagt til AI som tjeneste"
+git commit -m "Lagt til AI tjeneste i kontakt skjema"
 git push

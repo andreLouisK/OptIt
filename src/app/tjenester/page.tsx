@@ -81,7 +81,7 @@ export default function TjenesterPage() {
         description="Vi implementerer AI der det faktisk utgjør en forskjell. Ved å kombinere maskinlæring med etablerte forretningsregler, automatiserer vi manuelle steg og frigjør tid til verdiskapende arbeid."
         bullets={[
           "Automatisering av repetitive rutineoppgaver",
-          "Intelligente regler som utløser handlinger i CAD/PLM",
+          "Intelligente regler som utløser handlinger i CRM/ERP/PLM",
           "Automatisk generering av teknisk dokumentasjon",
           "Datastrukturering og analyse for bedre beslutninger",
           "Smartere kobling mellom uavhengige systemer",

@@ -10,6 +10,7 @@ const services = [
   "PLM-konsultasjon",
   "CAD/PLM/ERP-integrasjon",
   "CAM & Maskinstyring",
+  "AI-integrasjon",
   "Annet",
 ];
 
