@@ -4,7 +4,7 @@ import Link from "next/link";
 type ServiceBlockProps = {
   id?: string;
   pillLabel: string;
-  pillColor: "green" | "orange" | "purple" | "blue";
+  pillColor: "green" | "orange" | "purple" | "blue" | "red";
   title: string;
   description: string;
   bullets: string[];
@@ -32,6 +32,10 @@ const pillStyles: Record<
   blue: {
     bg: "bg-sky-50 text-sky-700",
     text: "text-sky-600",
+  },
+  red: {
+    bg: "bg-red-50 text-red-700",
+    text: "text-red-600",
   },
 };
 

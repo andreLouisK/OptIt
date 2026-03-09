@@ -37,6 +37,15 @@ const services = [
     shadow: "shadow-[0_18px_45px_rgba(56,189,248,0.20)]",
     icon: "wrench",
   },
+  {
+    title: "AI-integrasjon",
+    description:
+      "Vi implementerer AI der det gir reell nytte, som automatisering av repetitive oppgaver og utløsing av intelligente regler for en mer sømløs arbeidsflyt.",
+    href: "/tjenester#ai",
+    accent: "from-red-400/30 to-red-300/10",
+    shadow: "shadow-[0_18px_45px_rgba(239,68,68,0.20)]",
+    icon: "ai",
+  },
 ];
 
 export function ServicesOverviewSection() {
@@ -56,12 +65,14 @@ export function ServicesOverviewSection() {
             med å finne riktige verktøy for din bedrift.
           </p>
         </div>
-        <div className="grid gap-6 md:grid-cols-4">
+
+        <div className="flex flex-wrap justify-center gap-8">
           {services.map((service) => (
             <Link
               key={service.title}
               href={service.href}
-              className="group relative flex rounded-3xl border border-transparent bg-slate-50/0 p-[1px] transition hover:-translate-y-1"
+              className={`group relative flex rounded-3xl border border-transparent bg-slate-50/0 p-[1px] transition hover:-translate-y-1 
+                w-full md:w-[calc(33.333%-22px)] max-w-[380px] min-w-[280px]`}
             >
               <div
                 className={`pointer-events-none absolute inset-0 rounded-3xl bg-gradient-to-b ${service.accent} opacity-40 blur-xl transition group-hover:opacity-80`}
@@ -71,53 +82,19 @@ export function ServicesOverviewSection() {
               >
                 <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-xl bg-slate-50 text-sky-500 ring-1 ring-slate-200">
                   {service.icon === "cpu" ? (
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      className="h-5 w-5"
-                      fill="none"
-                      stroke="green"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="green" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <rect width="16" height="16" x="4" y="4" rx="2" />
                       <rect width="6" height="6" x="9" y="9" rx="1" />
-                      <path d="M15 2v2" />
-                      <path d="M15 20v2" />
-                      <path d="M2 15h2" />
-                      <path d="M2 9h2" />
-                      <path d="M20 15h2" />
-                      <path d="M20 9h2" />
-                      <path d="M9 2v2" />
-                      <path d="M9 20v2" />
+                      <path d="M15 2v2" /><path d="M15 20v2" /><path d="M2 15h2" /><path d="M2 9h2" /><path d="M20 15h2" /><path d="M20 9h2" /><path d="M9 2v2" /><path d="M9 20v2" />
                     </svg>
                   ) : service.icon === "database" ? (
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      className="h-5 w-5"
-                      fill="none"
-                      stroke="Orange"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="Orange" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <ellipse cx="12" cy="5" rx="9" ry="3" />
                       <path d="M3 5V19A9 3 0 0 0 21 19V5" />
                       <path d="M3 12A9 3 0 0 0 21 12" />
                     </svg>
                   ) : service.icon === "network" ? (
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      className="h-5 w-5"
-                      fill="none"
-                      stroke="Purple"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="Purple" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <rect x="16" y="16" width="6" height="6" rx="1" />
                       <rect x="2" y="16" width="6" height="6" rx="1" />
                       <rect x="9" y="2" width="6" height="6" rx="1" />
@@ -125,17 +102,14 @@ export function ServicesOverviewSection() {
                       <path d="M12 12V8" />
                     </svg>
                   ) : service.icon === "wrench" ? (
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      className="h-5 w-5"
-                      fill="none"
-                      stroke="Blue"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="Blue" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                    </svg>
+                  ) : service.icon === "ai" ? (
+                    /* Nytt AI-ikon (Sparkles) */
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="#ef4444" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                      <path d="M5 3v4" /><path d="M3 5h4" /><path d="M21 17v4" /><path d="M19 19h4" />
                     </svg>
                   ) : (
                     <span className="h-4 w-4 rounded-sm bg-current/80" />

@@ -72,6 +72,22 @@ export default function TjenesterPage() {
         ]}
         reverse
       />
+      <ServiceBlock
+        id="ai"
+        pillLabel="Smartere arbeidsflyt"
+        pillColor="red"
+        title="AI-integrasjon"
+        imageSrc="/images/tjenester/AI-integrasjon.png" // Husk å oppdatere bildebanen når du har et nytt bilde
+        description="Vi implementerer AI der det faktisk utgjør en forskjell. Ved å kombinere maskinlæring med etablerte forretningsregler, automatiserer vi manuelle steg og frigjør tid til verdiskapende arbeid."
+        bullets={[
+          "Automatisering av repetitive rutineoppgaver",
+          "Intelligente regler som utløser handlinger i CAD/PLM",
+          "Automatisk generering av teknisk dokumentasjon",
+          "Datastrukturering og analyse for bedre beslutninger",
+          "Smartere kobling mellom uavhengige systemer",
+          "Målrettet bruk av AI for reell nytteverdi",
+        ]}
+      />
       <ServicesPlatforms />
       <ServicesCTA />
     </>
