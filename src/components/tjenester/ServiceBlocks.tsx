@@ -7,10 +7,11 @@ type ServiceBlockProps = {
   pillColor: "green" | "orange" | "purple" | "blue" | "red";
   title: string;
   description: string;
+  imageAlt?: string;
   bullets: string[];
   ctaLabel?: string;
   reverse?: boolean;
-  imageSrc?: string; // Lagt til for bilde
+  imageSrc?: string;
 };
 
 const pillStyles: Record<
@@ -48,7 +49,8 @@ export function ServiceBlock({
   bullets,
   ctaLabel = "Få tilbud",
   reverse,
-  imageSrc, // Hentet ut prop
+  imageSrc,
+  imageAlt,
 }: ServiceBlockProps) {
   const pill = pillStyles[pillColor];
 
@@ -101,7 +103,7 @@ export function ServiceBlock({
             {imageSrc ? (
               <Image
                 src={imageSrc}
-                alt={title}
+                alt={imageAlt || title}
                 fill
                 className="object-cover transition-transform duration-500 hover:scale-105"
                 sizes="(max-width: 768px) 100vw, 50vw"

@@ -5,5 +5,5 @@ git commit -m "beskriv endringen"
 git push
 
 git add .
-git commit -m "SEO optimalisering, liten endring"
+git commit -m "SEO optimalisering, alt på alle bilder"
 git push

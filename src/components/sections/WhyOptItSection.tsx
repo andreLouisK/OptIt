@@ -26,7 +26,7 @@ const points = [
 import Image from "next/image";
 
 export function WhyOptItSection() {
-  // Felles props med 'as const' løser TypeScript-feilen på strokeLinecap/strokeLinejoin
+  
   const iconProps = {
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 24 24",
@@ -60,7 +60,7 @@ export function WhyOptItSection() {
                 key={point.title}
                 className="flex gap-4 rounded-2xl border border-slate-200 bg-slate-50 p-5 transition-colors hover:border-slate-300"
               >
-                {/* Ikon-container i samme stil som tjeneste-seksjonen */}
+                
                 <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white text-sky-600 ring-1 ring-slate-200 shadow-sm">
                   {point.icon === "pin" && (
                     <svg {...iconProps}>
@@ -107,10 +107,11 @@ export function WhyOptItSection() {
   {/* Bakgrunnsbilde */}
   <div className="absolute inset-0 z-0">
     <Image
-      src="/images/hjem/hjem-statistikk.png" // Sørg for at filen ligger i public/images/hjem/
-      alt="OptIT Erfaring i tall"
+      src="/images/hjem/hjem-statistikk.png"
+      alt="Industriell robotarm og digitale grensesnitt som representerer 
+      OptIT sin ekspertise innen automatisering av CAD, CAM, ERP og PLM-systemer for industri virksomhet."
       fill
-      priority // Legg til denne siden bildet er høyt oppe på siden
+      priority
       className="object-cover transition-transform duration-700 group-hover:scale-110"
       sizes="(max-width: 768px) 100vw, 50vw"
     />
