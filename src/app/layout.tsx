@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     default: "OptIT | Spesialist på CAD, PLM og Industriell Automatisering",
     template: "%s | OptIT"
   },
-  description: "OptIT hjelper industribedrifter med optimalisering av produktflyt, CAD/PLM-integrasjoner og smarte automatiseringsløsninger.",
+  description: "OptIT er basert i Norge og hjelper industribedrifter med optimalisering av produktflyt, CAD/PLM-integrasjoner og smarte automatiseringsløsninger.",
   keywords: ["CAD", "PLM", "Industri 4.0", "Automatisering", "API-integrasjon", "Norge", "Optimalisering", "Konstruksjon"],
   authors: [{ name: "André Louis Kristensen" }],
   metadataBase: new URL('https://optit.no'),

@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: ['/api/', '/admin/'], // Legg til stier du vil skjule for Google
+      disallow: ['/api/', '/admin/'],
     },
     sitemap: 'https://optit.no/sitemap.xml',
   }
