@@ -47,11 +47,6 @@ export const metadata: Metadata = {
     description: "Spesialistløsninger for en sømløs produktflyt i industrien.",
     images: ["/og-image.png"],
   },
-
-  icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
-  },
 };
 
 export default function RootLayout({
