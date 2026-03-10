@@ -22,7 +22,7 @@ export function CallToActionSection() {
           <p className="text-xs text-slate-400">
             Eller ring oss direkte:{" "}
             <span className="font-medium text-slate-200">
-              +47 900 00 000
+              +47 473 85 064
             </span>
           </p>
         </div>
