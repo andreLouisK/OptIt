@@ -15,9 +15,43 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "OptIT – Industriell digitalisering, CAD, CAM og PLM",
-  description:
-    "OptIT leverer spesialiserte konsulenttjenester innen CAD, CAM, PLM og PDM for norsk industri.",
+  title: {
+    default: "OptIT | Spesialist på CAD, PLM og Industriell Automatisering",
+    template: "%s | OptIT"
+  },
+  description: "OptIT hjelper industribedrifter med optimalisering av produktflyt, CAD/PLM-integrasjoner og smarte automatiseringsløsninger.",
+  keywords: ["CAD", "PLM", "Industri 4.0", "Automatisering", "API-integrasjon", "Norge", "Optimalisering", "Konstruksjon"],
+  authors: [{ name: "André Louis Kristensen" }],
+  metadataBase: new URL('https://optit.no'),
+  
+  openGraph: {
+    title: "OptIT - Din partner for teknisk utvikling",
+    description: "Spesialistløsninger for en sømløs produktflyt i industrien.",
+    url: "https://optit.no",
+    siteName: "OptIT",
+    locale: "nb_NO",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "OptIT - Industriell Automatisering og CAD/PLM spesialist",
+      },
+    ],
+  },
+  
+  twitter: {
+    card: "summary_large_image",
+    title: "OptIT - Din partner for teknisk utvikling",
+    description: "Spesialistløsninger for en sømløs produktflyt i industrien.",
+    images: ["/og-image.png"],
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
