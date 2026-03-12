@@ -5,5 +5,5 @@ git commit -m "beskriv endringen"
 git push
 
 git add .
-git commit -m "Endret mottaker på kontakt"
+git commit -m "Endret avsender på kontakt"
 git push

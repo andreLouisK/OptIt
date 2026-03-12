@@ -21,7 +21,7 @@ export async function sendEmail(formData: FormData) {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: "OptIT Kontakt <onboarding@resend.dev>",
+      from: "OptIT Kontakt <post@optit.no>",
       to: ["andre@optit.no"],
       subject: `Ny henvendelse: ${service} fra ${name}`,
       replyTo: email,
