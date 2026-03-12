@@ -24,7 +24,7 @@ export default function TjenesterPage() {
           "Implementering og onboarding",
           "Opplæring og kompetanseheving",
           "Avansert 3D-modellering og tegningsutvikling",
-          "Beste praksis og målukning",
+          "Beste praksis og struktur",
           "Migrering mellom systemer",
         ]}
       />
