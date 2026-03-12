@@ -16,7 +16,7 @@ export function Team() {
               {/* Firkantet bilde */}
               <div className="aspect-square relative bg-slate-800 w-full">
                 <Image
-                  src="/images/team/Andre Louis Kristensen - OptIT.jpg"
+                  src="/images/team/André Louis Kristensen - OptIT_komp.jpg"
                   alt="André Louis Kristensen, Grunder av OptIT, daglig leder og spesialist innen systemutvikling"
                   fill
                   className="object-cover"
