@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function ServicesCTA() {
   return (
     <section className="bg-slate-950 py-16">
@@ -9,9 +11,11 @@ export function ServicesCTA() {
           Vi hjelper deg med å velge riktig CAD/PLM-plattform basert på dine
           behov, budsjett og eksisterende infrastruktur.
         </p>
-        <button className="mt-7 inline-flex items-center justify-center rounded-full bg-sky-500 px-6 py-2.5 text-sm font-medium text-white shadow-lg shadow-sky-500/40 transition hover:bg-sky-400">
-          Book en gratis konsultasjon
-        </button>
+        <Link href="/kontakt">
+          <button className="mt-7 inline-flex items-center justify-center rounded-full bg-sky-500 px-6 py-2.5 text-sm font-medium text-white shadow-lg shadow-sky-500/40 transition hover:bg-sky-400">
+            Book en gratis konsultasjon
+          </button>
+        </Link>
       </div>
     </section>
   );

@@ -5,5 +5,5 @@ git commit -m "beskriv endringen"
 git push
 
 git add .
-git commit -m "tekstendring på tjenester side"
+git commit -m "Fikset link på tjeneste side"
 git push
