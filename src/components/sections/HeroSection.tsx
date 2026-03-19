@@ -37,7 +37,11 @@ export function HeroSection() {
   return (
     <section className="relative overflow-hidden border-b border-white/5 bg-slate-950 pt-24 pb-20 md:pt-32 md:pb-32">
       {/* Bakgrunns-effekt for å matche bildet */}
-      <div className="absolute top-0 right-0 h-[500px] w-[500px] bg-sky-500/10 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2" />
+      <div className="absolute top-0 right-0 h-[500px] w-[500px] bg-sky-500/10 blur-[120px] rounded-full animate-float-gradient" />
+
+<div className="absolute bottom-0 left-0 h-[400px] w-[400px] bg-blue-500/10 blur-[100px] rounded-full animate-float-gradient [animation-delay:4s]" />
+
+<div className="absolute top-1/2 left-1/3 h-[300px] w-[300px] bg-cyan-400/10 blur-[90px] rounded-full animate-float-gradient [animation-delay:2s]" />
       
       <div className="relative mx-auto flex max-w-6xl flex-col gap-16 px-4 md:flex-row md:items-center md:justify-between md:px-8">
         {/* Venstre side: Tekst */}

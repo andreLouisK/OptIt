@@ -9,7 +9,7 @@ export default function Home() {
     <>
       {/* Hero / toppseksjon */}
       <HeroSection />
-
+      
       {/* Våre tjenester – lys seksjon */}
       <ServicesOverviewSection />
 
