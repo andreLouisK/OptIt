@@ -19,6 +19,8 @@ export default function TjenesterPage() {
         Enten du skal velge nytt system, trenger hjelp med implementering, opplæring av teamet 
         eller optimalisering av eksisterende arbeidsprosesser – vi har bred 
         erfaring på tvers av plattformer."
+        ctaLabel="Se CAD-tjenester"
+        ctaHref="/tjenester/cad"
         bullets={[
           "Systemvalg og rådgivning",
           "Implementering og onboarding",
@@ -39,6 +41,8 @@ export default function TjenesterPage() {
         description="Vi hjelper deg med å velge, implementere og optimalisere PLM-systemer. 
         Fra behovsanalyse til ferdig oppsett – vi sikrer at produktdata, 
         endringsprosesser og dokumentasjon håndteres effektivt."
+        ctaLabel="Se PLM-tjenester"
+        ctaHref="/tjenester/plm"
         bullets={[
           "Prosesskartlegging og behovsanalyse",
           "Oppsett av produktstruktur og konfigurasjon",
@@ -59,6 +63,8 @@ export default function TjenesterPage() {
         description="Vi kobler sammen CAD, PLM og ERP - systemene deres for sømløs dataflyt i 
         hele produktutviklingsprosessen. Du slipper manuelle overføringer og sikrer at alle 
         jobber med oppdatert informasjon."
+        ctaLabel="Se integrasjons-muligheter"
+        ctaHref="/tjenester/integrasjon"
         bullets={[
           "Integrasjon mellom CAD, PLM og ERP",
           "Automatisering av dataoverføring",
@@ -78,6 +84,8 @@ export default function TjenesterPage() {
         description="Fra CAD-modell til ferdig NC-kode. Vi hjelper deg med CAM-programmering, 
         postprosessorer,  maskinoppsett og effektiv produksjonsplanlegging – enten det er fresing, 
         dreiing eller multiaxis-maskiner."
+        ctaLabel="Se CAM-tjenester"
+        ctaHref="/tjenester/cam"
         bullets={[
           "CAM-programmering (2.5D til 5-akse)",
           "Verktøystrategi og optimalisering",
@@ -99,6 +107,8 @@ export default function TjenesterPage() {
         description="Vi implementerer AI der det faktisk utgjør en forskjell. 
         Ved å kombinere maskinlæring med etablerte forretningsregler, automatiserer vi 
         manuelle steg og frigjør tid til verdiskapende arbeid."
+        ctaLabel="Se AI-løsninger"
+        ctaHref="/tjenester/ai"
         bullets={[
           "Automatisering av repetitive rutineoppgaver",
           "Intelligente regler som utløser handlinger i CRM/ERP/PLM",

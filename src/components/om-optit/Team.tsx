@@ -33,7 +33,7 @@ export function Team() {
                   André Louis Kristensen
                 </h3>
                 <p className="text-xs text-sky-400 font-medium mt-1 mb-3">
-                  Daglig leder & Spesialist
+                  Daglig leder & Systemutvikler
                 </p>
                 
                 <div className="h-px bg-white/5 w-full mb-3" />

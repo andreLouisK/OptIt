@@ -5,5 +5,5 @@ git commit -m "beskriv endringen"
 git push
 
 git add .
-git commit -m "Lagt til keyframes i hero section"
+git commit -m "lagt til undersider for tjenester"
 git push
