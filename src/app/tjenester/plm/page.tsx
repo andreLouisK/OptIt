@@ -60,6 +60,7 @@ export default function PlmPage() {
     {
       name: "Arena PLM",
       logoUrl: "https://www.arenasolutions.com/wp-content/plugins/arena-solutions-modules/assets/images/Arena-Logo.svg",
+      logoAlt: "Arena PLM logo – skybasert Product Lifecycle Management programvare for industri",
       badge: "PLM – Vår anbefaling",
       description: "Verdens ledende skybaserte PLM-system som knytter sammen CAD, forsyningskjede og produksjon på en unik måte.",
       features: [
@@ -72,6 +73,7 @@ export default function PlmPage() {
     {
       name: "PTC Windchill",
       logoUrl: "https://upload.wikimedia.org/wikipedia/commons/3/38/PTC_Windchill.png",
+      logoAlt: "PTC Windchill logo – Enterprise PLom-løsning for komplekse produktstrukturer",
       badge: "Enterprise PLM",
       description: "En av markedets mest robuste PLM-løsninger, ideell for komplekse produktstrukturer og store globale team.",
       features: [
@@ -84,6 +86,7 @@ export default function PlmPage() {
     {
       name: "Onshape PDM",
       logoUrl: "https://www.onshape.com/cdn-images/2db2486ec4e220b607223acf5f79cfe5e02d7859-216x49.svg?w=640",
+      logoAlt: "Onshape logo – skybasert CAD med innebygd PDM og versjonskontroll",
       badge: "PDM – Innebygd løsning",
       description: "For bedrifter som ønsker PDM integrert direkte i CAD-verktøyet for umiddelbar versjonskontroll.",
       features: [

@@ -51,6 +51,7 @@ export default function CadPage() {
     {
       name: "Onshape",
       logoUrl: "https://www.onshape.com/cdn-images/2db2486ec4e220b607223acf5f79cfe5e02d7859-216x49.svg?w=640",
+      logoAlt: "Onshape logo – skybasert CAD-plattform for moderne produktutvikling og sanntids samarbeid",
       badge: "Cloud Native – Vår anbefaling",
       description: "Fremtidens CAD-plattform som kjører 100% i skyen. Eliminerer filhåndtering, krasj og behovet for dyr maskinvare.",
       features: [
@@ -63,6 +64,7 @@ export default function CadPage() {
     {
       name: "SolidWorks",
       logoUrl: "https://www.3ds.com/assets/3ds-navigation/3DS_corporate-logo_solidworks.svg",
+      logoAlt: "SolidWorks logo – markedsledende programvare for parametrisk 3D-modellering og mekanisk konstruksjon",
       badge: "Markedsleder",
       description: "Verdens mest brukte 3D CAD-programvare. Enormt økosystem av tilleggsverktøy og kompetanse i markedet.",
       features: [
@@ -75,6 +77,7 @@ export default function CadPage() {
     {
       name: "Autodesk Inventor",
       logoUrl: "https://cadtalk.com/wp-content/uploads/2024/10/Autodesk-Inventor-Logo-Vector.svg-.png",
+      logoAlt: "Autodesk Inventor logo – profesjonelt verktøy for mekanisk design og industriell automatisering",
       badge: "Industriell Automatisering",
       description: "Profesjonelt verktøy for mekanisk design, simulering og dokumentasjon med dyp integrasjon i Autodesk-universet.",
       features: [

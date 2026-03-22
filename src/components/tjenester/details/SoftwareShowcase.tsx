@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 interface SoftwareSolution {
     name: string;
     logoUrl: string;
+    logoAlt: string;
     badge: string;
     description: string;
     features: string[];
@@ -120,7 +121,7 @@ export function SoftwareShowcase({
                             <div className="inline-flex rounded-xl bg-white p-3 shadow-[0_0_20px_rgba(255,255,255,0.1)] mb-6">
                                 <img
                                     src={solution.logoUrl}
-                                    alt={solution.name}
+                                    alt={solution.logoAlt}
                                     className="h-7 w-auto object-contain"
                                 />
                             </div>

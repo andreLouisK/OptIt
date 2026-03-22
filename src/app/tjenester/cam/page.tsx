@@ -60,6 +60,7 @@ export default function CamPage() {
     {
       name: "Onshape CAM Studio",
       logoUrl: "https://www.onshape.com/cdn-images/2db2486ec4e220b607223acf5f79cfe5e02d7859-216x49.svg?w=640",
+      logoAlt: "Onshape CAM Studio logo – skybasert CAM-programvare for integrert CAD og maskinering",
       badge: "Cloud CAM – Vår anbefaling",
       description: "Den første profesjonelle CAM-løsningen som er fullstendig integrert i skyen. Programmer maskinene dine direkte i nettleseren.",
       features: [
@@ -72,6 +73,7 @@ export default function CamPage() {
     {
       name: "Mastercam",
       logoUrl: "https://www.mastercam.com/wp-content/uploads/2025/12/Mastercam-2Color-Logo-scaled.jpg",
+      logoAlt: "Mastercam logo – industristandard programvare for 5-akse CNC-maskinering og fresing",
       badge: "Industristandard",
       description: "Verdens mest brukte CAM-programvare for de mest krevende oppgavene og kompleks 5-akse maskinering.",
       features: [
@@ -84,6 +86,7 @@ export default function CamPage() {
     {
       name: "SolidWorks CAM",
       logoUrl: "https://www.solidapplications.co.uk/images/products/cam/CAM-Standard.png",
+      logoAlt: "SolidWorks CAM logo – integrert og regelbasert maskineringsløsning for SolidWorks-brukere",
       badge: "Integrert Maskinering",
       description: "Drevet av CAMWorks-teknologi, gir dette SolidWorks-brukere en integrert og regelbasert tilnærming til produksjon.",
       features: [

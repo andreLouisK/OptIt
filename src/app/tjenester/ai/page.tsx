@@ -60,6 +60,7 @@ export default function AiPage() {
     {
       name: "Azure AI Services",
       logoUrl: "https://mcaconnect.com/wp-content/uploads/2024/09/vs-2.png",
+      logoAlt: "Microsoft Azure AI logo – sikker plattform for kunstig intelligens og maskinlæring i skyen",
       badge: "Enterprise – Vår anbefaling",
       description: "Den tryggeste plattformen for bedrifter som ønsker å bruke AI på egne data uten å kompromittere sikkerhet eller personvern.",
       features: [
@@ -72,6 +73,7 @@ export default function AiPage() {
     {
       name: "n8n / Automatisering",
       logoUrl: "https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-logo.png",
+      logoAlt: "n8n logo – kraftig verktøy for visuell arbeidsflyt-automatisering og AI-integrasjon",
       badge: "Smidig Innovasjon",
       description: "En kraftig plattform for å koble AI direkte inn i dine eksisterende arbeidsflyter og systemer uten tung koding.",
       features: [
