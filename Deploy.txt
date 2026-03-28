@@ -5,5 +5,5 @@ git commit -m "beskriv endringen"
 git push
 
 git add .
-git commit -m "Lagt til riktig optit logo i tjenester side og lagt til logoAlt for SEO"
+git commit -m "Lagt til .artifactignore"
 git push
